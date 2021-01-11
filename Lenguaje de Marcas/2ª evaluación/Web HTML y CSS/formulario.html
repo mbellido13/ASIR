@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menos que coches</title>
+        <link href="estils.css" rel="stylesheet" type="text/css">
+        <link  rel="icon"   href="imagens/favicon.png" type="image/png" />
+    </head>
+    <body>
+        <!-- Parte superior del proyecto (un pequeño apartado con información poco relevante) -->
+        <header>
+            <h1>Menos que coches</h1>
+            <p>Bienvenidos a este coqueto lugar para los amantes de los coches</p>
+        </header>
+        <!-- Contendra todos los enlaces de las páginas locales de este sitio web -->
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="coches.html">COCHES</a>
+            <a href="topventas.html">TOP VENTAS</a>
+            <a href="multimedia.html">MULTIMEDIA</a>
+            <a href="formulario.html">FORMULARIO</a>
+                
+        </nav>
+        <!-- Breve información sobre el sitio web -->
+        <section>
+            <h2>Bienvenidos a menos que coches!!</h2>
+            <p>Menos que coches, es una página web dedicada a las pruebas y opiniones al respecto, sobre todo tipo de vehículos,
+                desde los más deportivos hasta los familiares, pasando por todas y cada una de las ramas del automovilismo. Sin duda
+                una web para los verdaderos amantes de los coches.
+            </p>
+        </section>
+        <!-- Lo utilizaremos como contenedor de contenido simple -->
+        <div class="formulario">
+            <form action="/action_page.php">
+                <div class="holaa">
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" name="nombre" value="">
+                </div>
+                <div class="holaa">
+                    <label for="correo">Correo electronico: </label>
+                    <input type="email" name="correo">
+                </div>
+                <div class="holaa">
+                    <label for="telefono">Número de telefono:</label>
+                    <input type="number" name="telefono" value="633 633 633"><br><br>
+                </div>
+                <div class="holaa">
+                    <label for="contraseña">Contraseña:<br>(como mínimo 6 carácteres, sin espacios)</label><br><br>
+                    <input type="password" name="contraseña">
+                </div>
+                <div class="holaa">
+                    <label for="conocimiento">Como puntuarias tu conocimiento sobre coches</label>
+                    <input type="range" name="conocimiento">
+                </div>
+                <div class="holaa">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha">
+                </div>
+                <div class="holaa">
+                    <label for="check">También me quiero suscribir en Menos que Coches</label>
+                    <input type="checkbox" name="check">
+                </div>
+                <div class="holaa">
+                    <input type="submit" name="enviar mensaje" value="Enviar Mensaje" class="enviar">
+                </div>
+            </form>
+        </div>
+        <!-- Pie de página -->
+    </body>
+</html>

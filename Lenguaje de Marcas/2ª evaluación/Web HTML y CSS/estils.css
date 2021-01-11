@@ -172,9 +172,9 @@ aside ul a:hover {
 footer {
     background-color: black;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     width: 99%;
-    height: 40px;
+    height: 5%;
     color: white;
     text-align: right;
     border-radius: 5px;
@@ -245,14 +245,16 @@ footer p {
 /* tabla comparativa modelos */
 
 
-.tftable {
+.tabla_coches {
     font-size:12px;color:#fbfbfb;
     width:100%;
     border-width: 1px;
     border-color: #686767;
-    border-collapse: collapse;}
+    border-collapse: collapse;
+    align-content: center;
+    }
 
-.tftable th {
+.tabla_coches th {
     font-size:12px;
     background-color:#171515;
     border-width: 1px;
@@ -262,20 +264,67 @@ footer p {
     text-align:left;
     }
     
-.tftable tr {
+.tabla_coches tr {
     background-color:#2f2f2f;
     }
 
-.tftable td {
+.tabla_coches td {
     font-size:12px;
     border-width: 1px;
     padding: 8px;
     border-style: solid;
     border-color: #686767;
+    align-content: center;
     }
 
-.tftable tr:hover {
+.tabla_coches tr:hover {
     background-color:#171515;
     }
 
+/* ESTILOS DE LAS FOTOS PARA EL APARTADO MULTIMEDIA */
 
+article video{
+    align-content: center;
+    margin-left: 10%;
+    width: 40%;
+    margin-left: 25%;
+}
+
+/* FORMULARIO */
+
+div.texto {
+	background-color: white;
+	text-align: left;
+	border-style: dashed;
+	border-color: #A9A9A9 ;
+	border-radius: 2px;
+	width: 90%;
+    margin-left: 5%;
+    color: gainsboro;
+}
+
+div.busqueda {
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	
+}
+
+div.formulario {
+	text-align: center;
+	width: 70%;
+	margin-left: 15%;
+}
+
+div.holaa {
+	background-color: #A9A9A9;
+	border-color: white;
+	border-style: solid;
+	margin-top: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+input.enviar {
+    background-color: #A9A9A9;
+}
