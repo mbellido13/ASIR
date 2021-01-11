@@ -188,23 +188,94 @@ footer p {
 
 /*ESTILOS HOJA DE COCHES*/
 
-/* Configuración general de section */
-#coches {
-    background-color: black;
-    /*color: gainsboro;*/
-    margin-top: 4%;
-    width: 70%;
-    position: relative;
-    margin-left: 15%;
-    text-align: center;
-}
-#coches  h3 {
-    color: wheat;
-}
-    /* Configuramos el h2 del section */
-section h2 {
-    color: gainsboro;
-    padding-left: 3%;
-    padding-top: 3%;
-    font-size: 200%;
-}
+    /* Configuración general de section */
+    #coches {
+        background-color: black;
+        /*color: gainsboro;*/
+        margin-top: 5%;
+        width: 70%;
+        position: relative;
+        margin-left: 15%;
+        text-align: center;
+    }
+    #coches  h3 {
+        color: wheat;
+    }
+        /* Configuramos el h2 del section */
+    section h2 {
+        color: gainsboro;
+        padding-left: 3%;
+        padding-top: 3%;
+        font-size: 200%;
+    }
+    /* Contenido de aside */
+    #coches_aside {
+        width: 20%;
+        position: fixed;
+        float: left;
+        margin-left: 73%;
+        margin-top: 5%; 
+        background-color: black;
+        color: gainsboro;
+        padding-bottom: 10%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    /*css lista desordenada de aside*/
+    #coches_aside ul{
+        list-style: none;
+        text-align: left;
+        margin-left: 4%;
+    }
+    /*Css de los li de la liste del ul definido anteriormente*/
+    #coches_aside ul li {
+        padding-top: 1%;
+    }
+    /*Configuración de color de los links*/
+    #coches_aside ul a {
+        color: #f36b02;
+    }
+    /*Hover de los links para que cambien el color al pasar el ratón por encima*/
+    #coches_aside ul a:hover {
+        color: yellowgreen;
+    }
+
+/* CSS TOP VENTAS */
+
+/* tabla comparativa modelos */
+
+
+.tftable {
+    font-size:12px;color:#fbfbfb;
+    width:100%;
+    border-width: 1px;
+    border-color: #686767;
+    border-collapse: collapse;}
+
+.tftable th {
+    font-size:12px;
+    background-color:#171515;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #686767;
+    text-align:left;
+    }
+    
+.tftable tr {
+    background-color:#2f2f2f;
+    }
+
+.tftable td {
+    font-size:12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #686767;
+    }
+
+.tftable tr:hover {
+    background-color:#171515;
+    }
+
+
