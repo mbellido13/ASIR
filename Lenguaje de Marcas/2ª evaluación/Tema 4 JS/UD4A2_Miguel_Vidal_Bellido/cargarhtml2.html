@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+        var nombre1 = prompt("Dime un nombre");
+        var nombre2 = prompt("Dime otro nombre");
+        var nombre3 = prompt("Dime otro nombre");
+        caracteres_num1 = nombre1.length;
+        caracteres_num2 = nombre2.length;
+        caracteres_num3 = nombre2.length;
+       
+        // BUCLE PARA COMPARAR LOS CARACTERES  
+        if ( caracteres_num1 > caracteres_num2 && caracteres_num1 > caracteres_num3 ) {
+            document.write("El primer numero es el más grande: "+nombre1);
+        } else if ( caracteres_num2 > caracteres_num3 ){
+            document.write("El segundo numero es el más grande: "+nombre2);
+        } else {
+            document.write("El tercer numero es el más grande: "+nombre3);
+        }
+        </script>
+    </body>
+</html>
