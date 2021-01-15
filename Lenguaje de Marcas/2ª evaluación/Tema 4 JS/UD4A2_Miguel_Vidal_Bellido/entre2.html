@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+        // DECLARAMOS LAS VARIABLES QUE TENDREMOS QUE UTILIZAR
+        var numero = prompt("Introduce un número entero");
+
+        var resultado = paroImpar(numero);
+        alert("El número "+numero+" es "+resultado);
+        
+        // REALIZAMOS UNA FUNCIÓN, MEDIANTE LA CUAL OBTENDREMOS SI EL NUMERO ES PAR O NO
+        // MEDIANTE EL OPERADOR DE RESIDUO DE LA DIVISIÓN (%)
+        function paroImpar(numero) {
+        if(numero % 2 == 0) {
+            return "divisble por 2";
+        }
+        else {
+            return "no es divisible por 2";
+        }
+        }
+        </script>
+    </body>
+</html>
