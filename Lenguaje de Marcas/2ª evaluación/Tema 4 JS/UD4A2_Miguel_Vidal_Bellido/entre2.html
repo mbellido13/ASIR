@@ -7,22 +7,18 @@
     </head>
     <body>
         <script>
-        // DECLARAMOS LAS VARIABLES QUE TENDREMOS QUE UTILIZAR
-        var numero = prompt("Introduce un número entero");
+            // PEDIMOS LOS DOS NUMEROS PARA ALMACENARLOS EN VARIABLE Y VARIABLE1
+            var numero = prompt("Porfavor, introduce un número entero");  
+            var numero1 = prompt("Porfavor, introduce otro numero")
+            
+            // Configuramos el contador limite en numero, ya que aunque el otro sea más largo no será influyente en el resultado
 
-        var resultado = paroImpar(numero);
-        alert("El número "+numero+" es "+resultado);
-        
-        // REALIZAMOS UNA FUNCIÓN, MEDIANTE LA CUAL OBTENDREMOS SI EL NUMERO ES PAR O NO
-        // MEDIANTE EL OPERADOR DE RESIDUO DE LA DIVISIÓN (%)
-        function paroImpar(numero) {
-        if(numero % 2 == 0) {
-            return "divisble por 2";
-        }
-        else {
-            return "no es divisible por 2";
-        }
-        }
+            for (i=0; i < numero; i++) {
+                if (numero % i == 0 && numero1 % i == 0) {
+                 document.write(i,"; ");
+                }
+            }
+
         </script>
-    </body>
+        </body>
 </html>
