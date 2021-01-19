@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            // PEDIMOS UNA CADENA DE CARACTERES AL USUARIO
+            var frase = prompt("Porfavor, introduce una frase."); 
+            var contador = 0;
+
+
+            posicion = frase.indexOf("a");
+            while ( posicion != -1 ) {
+            contador++;
+            posicion = frase.indexOf("a",posicion+1);
+            }
+            
+            document.write("Aparece la letra a"+cuenta+" veces");
+        </script>
+        </body>
+</html>

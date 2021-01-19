@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            // PEDIMOS UN NÚMERO AL USUARIO
+            var numero = prompt("Porfavor, introduce un número entero"); 
+            var comprobador = 0;
+            // Para solucionarlo
+            // Si el número tiene más de un divisor será primo si no será entero
+
+            // Comprobamos los divisores que tiene el número introducido
+            for (i=2; i < numero; i++) {
+                if (numero % i == 0) {
+                // la variable comprobador, será incrementada cada vez que el resto de una división sea 0
+                 comprobador++;
+                 console.log(comprobador);
+                }
+            }
+            // Mediante este if, cuando el comprobador sea 0, significara que no hay divisores ya que la variable no ha sido incrementada
+            if (comprobador == 0) {
+                document.write("El número "+numero+" es entero");
+            } else {
+                document.write("El número "+numero+" no es entero");
+            }
+            
+        </script>
+        </body>
+</html>
