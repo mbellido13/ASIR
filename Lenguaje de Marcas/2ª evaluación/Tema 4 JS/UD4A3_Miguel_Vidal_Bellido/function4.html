@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            var cadena1 = prompt("Inserta una cadena de texto");
+            var cadena2 = prompt("Inserta una cadena de texto");
+
+            function longitud(p1,p2) {
+               // primeramente obtenemos la longitud de las dos variables
+
+               longitud1 = cadena1.length
+               longitud2 = cadena2.length
+
+                if (longitud1 > longitud2){
+                    document.write("La cadena 1 tiene más caracteres que la cadena 2 <br/>")
+                }else if (longitud1 < longitud2){
+                    document.write("La cadena 2 tiene más caracterese que la cadena 1 </br>")
+                }else{
+                    document.write("Las dos cadenas tienen la misma longitud")
+                }
+            }
+
+            longitud(cadena1,cadena2);
+        </script>
+        </body>
+</html>

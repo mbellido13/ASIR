@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            var telefono = prompt("Escribe un número de teléfono");
+            var esvalidoono = /^[0-9]+$/;
+
+            function longitud(p1) {
+                if (p1.length == 9 && p1.match(esvalidoono)){
+                    document.write("El número de telefono es valido <br/>")
+                    document.write(p1.substr(0,3)+"-"+p1.substr(-3,3)+"-"+p1.substr(-6,3))
+                   
+                    console.log(p1);
+                }else {
+                    document.write("El número de telefono no es valido")
+                }
+            }
+
+            longitud(telefono);
+        </script>
+        </body>
+</html>

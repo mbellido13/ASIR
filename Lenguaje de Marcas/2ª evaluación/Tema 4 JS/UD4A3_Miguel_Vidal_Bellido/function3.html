@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            var telefono = prompt("Escribe un CIF");
+            var siete_numeros = /^[0-9]+$/;
+            var letra = /^[A-Z]+$/;
+
+            function longitud(p1) {
+                // primeramente obtenemos el primer caracter y comprobamos que es una letra comprentida entre la A y la Z (MAYUSCULAAAA)
+                    var primer_caracter = p1.substr(0,1)
+                // seguidamente comprobamos que los 7 carácteres restantes son números comprendidos entre el 0 y el 9
+                    var siete_caracteres = p1.substr(-1,7)
+
+                if (p1.length == 8 && primer_caracter.match(letra) && siete_caracteres.match(siete_numeros)){
+                    document.write("El CIF introducido es valido <br/>")
+                }else {
+                    document.write("El CIF introducido NO es valido <br/>");
+                    document.write("La forma de este debe ser como la siguiente: M1234567")
+                }
+            }
+
+            longitud(telefono);
+        </script>
+        </body>
+</html>
