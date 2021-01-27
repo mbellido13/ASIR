@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            var numero1 = prompt("Escribe un numero");
+            var numero2 = prompt("Escribe otro numero");
+
+            
+
+            function principal(p1,p2) {
+                // realizamos la suma
+                var suma = parseInt(numero1) + parseInt(numero2);
+
+                // comprobador de numero
+
+                var comprobador = /^[0-9]+$/;
+                // el if comprobara si es positivo o no, en caso de ser negativo lo cambiara a positivo
+                console.log(suma.match(comprobador));
+
+                if (suma.match(comprobador)){
+                    document.write("El resultado de la suma es "+suma);
+                } else {
+                    // comprobamos la logitud de la suma
+                    caracteres = suma.length;
+                    document.write(suma);
+                }
+            }
+
+            principal(numero1,numero2);
+        </script>
+        </body>
+</html>
