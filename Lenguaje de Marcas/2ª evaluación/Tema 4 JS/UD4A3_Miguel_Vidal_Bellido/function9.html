@@ -10,11 +10,12 @@
             var numero = prompt("Introduce un número");
 
             function es_primo(p1){
-                
+                comprobador=0;
                 for (i=2; i < p1; i++) {
                     if (p1 % i == 0) {
                     // la variable comprobador, será incrementada cada vez que el resto de una división sea 0
-                    comprobador++
+
+                    comprobador++;
                     console.log(comprobador);
                     }
                 }
