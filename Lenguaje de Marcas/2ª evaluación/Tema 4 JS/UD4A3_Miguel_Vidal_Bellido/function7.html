@@ -10,8 +10,19 @@
             var numero1 = prompt("Escribe un numero");
             var numero2 = prompt("Escribe otro numero");
 
-            
+            function principal(p1,p2){
+                var suma = parseInt(p1)+parseInt(p2);
+                var menos_per_uno = -1;
 
+                if (suma < 0){
+                    var resultado = parseInt(suma)*parseInt(menos_per_uno); 
+                }else{
+                    var resultado = suma;
+                }
+            
+                document.write("El resultado de la suma es "+resultado)
+            }            
+/*
             function principal(p1,p2) {
                 // realizamos la suma
                 var suma = parseInt(numero1) + parseInt(numero2);
@@ -30,7 +41,7 @@
                     document.write(suma);
                 }
             }
-
+*/
             principal(numero1,numero2);
         </script>
         </body>
