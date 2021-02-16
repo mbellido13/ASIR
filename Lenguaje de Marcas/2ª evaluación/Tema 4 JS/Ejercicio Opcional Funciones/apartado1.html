@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta	charset="utf-8"	/>
+    <title>Pruebas Javascript</title>
+    <script	src="Alert(Hola mundo).js"></script>
+    </head>
+    <body>
+        <script>
+            
+            
+                var string1 = prompt("Introduce una cadena");
+                var string2 = prompt("Introduce otra cadena");
+
+                function apartado1(cadena1,cadena2){
+                    // comprobamos si son un string o no
+                    if(typeof cadena1 === 'string' && typeof cadena2 === 'string'){
+                        var longitud_cadena1 = cadena1.length;
+                        var longitud_cadena2 = cadena2.length;
+                        // comprobamos cual de las dos cadenas es más larga
+                        if(longitud_cadena1 > longitud_cadena2){
+                            console.log("La cadena 1 es mayor que la cadena 2");
+                        }else{
+                            console.log("La cadena 2 es mayor que la cadena 1");
+                        }
+                    }else{
+                        document.write("ATENCIÓN!! NO HAS INTRODUCIDO UN STRING")
+                    }
+                    
+                }
+
+                // primera llamada con prompt
+                apartado1(string1,string2);
+                // COMPROBACIÓN DE BUEN USO
+                // Primer parametro mayor que el segundo
+                apartado1("1234","123");
+                apartado1("123","435");
+                apartado1("123");
+
+            
+
+            
+
+            
+        </script>
+        </body>
+</html>
